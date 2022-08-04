@@ -1,0 +1,91 @@
+.poster {
+    width: 85%;
+    margin-top: 90px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.posterWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.posterImg {
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 100px;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.25));
+}
+
+.posterInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.colorText {
+    color: #00C2FF;
+}
+
+.posterOverview {
+    width: 80%;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    padding: 15px;
+}
+
+.rating {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.stars{
+    z-index: 0;
+    margin-left: 10px;
+}
+
+.posterDate, .posterLanguage{
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.posterDate{
+    margin-top: 20px;
+}
+
+.date{
+    margin-left: 20px;
+}
+
+.language{
+    margin-left: 40px;
+}
+
+.posterTitle{
+    margin-left: 15px;
+}
+
+.posterButton{
+    background: #00C2FF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    width: 230px;
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+
+.buttonLink{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+

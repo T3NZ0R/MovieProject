@@ -1,0 +1,32 @@
+.movieImg {
+    width: 260px;
+    border-radius: 30px 30px 0 0;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movieButton {
+    border-radius: 0 0 30px 30px;
+    height: 40px;
+    border-color: rgba(0, 0, 0, 0);
+    background: rgba(77,190,255,0.38);
+}
+
+.movieButton:hover{
+    height: 50px;
+}
+
+.movieLink{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.movieLink:hover{
+    color: #fff850;
+    text-decoration: none;
+}
+

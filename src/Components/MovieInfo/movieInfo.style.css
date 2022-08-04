@@ -1,0 +1,54 @@
+.movieItem {
+    display: flex;
+    flex-direction: row;
+    border: #3E3E67 2px solid;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.moviePhoto {
+    width: 220px;
+    border-radius: 30px;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.25));
+}
+
+.movieElementTitle {
+    padding-top: 20px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.movieElementOverview {
+    padding-top: 10px;
+    margin-left: 60px;
+    width: 85%;
+    font-size: 12px;
+    height: 120px;
+}
+
+.starsRating {
+    padding-top: 20px;
+    margin-left: 60px;
+}
+
+.movieElementButton {
+    background: #00C2FF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    width: 230px;
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.movieElementLink {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.movieElementLink:hover {
+    color: #fff850;
+}
