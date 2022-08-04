@@ -42,19 +42,19 @@ const MoviesGenrePage = () => {
             </div>
 
             {page !== 1 ?
-                <Pagination>
+                <Pagination >
                     <Pagination.Prev onClick={() => dispatch(addPageNumber('prev'))}/>
-                    <Pagination.Item>{page - 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('prev'))} >{page - 1}</Pagination.Item>
                     <Pagination.Item active>{page}</Pagination.Item>
-                    <Pagination.Item>{page + 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))} >{page + 1}</Pagination.Item>
                     <Pagination.Next onClick={() => dispatch(addPageNumber('next'))}/>
                 </Pagination>
                 :
                 <Pagination>
                     <Pagination.Prev onClick={() => dispatch(addPageNumber('prev'))}/>
                     <Pagination.Item active>{page}</Pagination.Item>
-                    <Pagination.Item>{page + 1}</Pagination.Item>
-                    <Pagination.Item>{page + 2}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))} >{page + 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('twoStep'))} >{page + 2}</Pagination.Item>
                     <Pagination.Next onClick={() => dispatch(addPageNumber('next'))}/>
                 </Pagination>
             }
