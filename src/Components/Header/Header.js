@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {Route, NavLink, Routes, Outlet, useLocation} from "react-router-dom";
 
 import {GenreBadge, SearchForm} from "../index";
-import {MoviesGenrePage, MoviesListPage, WatchMovie, Home, Favourites, AboutUs, NoInfo} from "../../Pages";
+import {MoviesGenrePage, MoviesListPage, WatchMovie, Home, Favourites, AboutUs} from "../../Pages";
 import {addSessionId} from "../../Store";
 import 'bootstrap/dist/css/bootstrap.css';
 import './header.style.css';
@@ -109,7 +109,6 @@ const Header = () => {
 
                     <Route path={'/about-us'} element={<AboutUs/>}/>
 
-                    {/*<Route path={'*'} element={<NoInfo/>}/>*/}
 
                 </Routes>
             </div>
