@@ -71,7 +71,6 @@ a > a {
     display: flex;
     flex-direction: row;
     column-gap: 60px;
-    margin-right: 170px;
 }
 
 
