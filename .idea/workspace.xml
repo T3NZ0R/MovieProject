@@ -1,74 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project">
-      <change afterPath="$PROJECT_DIR$/src/Components/CarouselPreview/CarouselPreview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CarouselPreview/CarouselPreview.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Review/Review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Review/Review.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Reviews/Reviews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Reviews/Reviews.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/SimilarMovies/SimilarMovies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/SimilarMovies/SimilarMovies.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUs.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Favourites/Favourites.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Favourites/Favourites.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Home/Home.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/NoInfo/NoInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/NoInfo/NoInfo.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Validators/review.validator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Exclude.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/PCAboutUs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Sort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Telegram_logo 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/VectorAboutUs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/iconPeopleAboutUs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/material__9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/movie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/pngegg (1) 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/pngwing 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/worldAboutUs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project predeploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer/footer.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/footer.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/GenreBadge/GenreBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/GenreBadge/GenreBadge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/GenreBadge/GenreBadge.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/GenreBadge/GenreBadge.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/header.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/header.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieBadge/movieBadge.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieBadge/movieBadge.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieInfo/MovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieInfo/MovieInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieInfo/movieInfo.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieInfo/movieInfo.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NowPlaying/NowPlaying.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NowPlaying/NowPlaying.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NowPlaying/type.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NowPlaying/type.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Popular/Popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Popular/Popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PosterPreview/PosterPreview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PosterPreview/posterPreview.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchForm/searchForm.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchForm/searchForm.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopRated/TopRated.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopRated/TopRated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Upcoming/Upcoming.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Upcoming/Upcoming.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MovieListPage/MovieListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MovieListPage/MovieListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MovieListPage/movieListPage.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MovieListPage/movieListPage.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MoviesGenrePage/MoviesGenrePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MoviesGenrePage/MoviesGenrePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/WatchMovie/watchMovie.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/WatchMovie/watchMovie.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/moviesList.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/moviesList.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/moviesList.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/moviesList.slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +177,7 @@
       <workItem from="1668075691811" duration="21601000" />
       <workItem from="1668435614290" duration="15374000" />
       <workItem from="1668459193986" duration="36209000" />
-      <workItem from="1668600932037" duration="329000" />
+      <workItem from="1668600932037" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="Pet Project">
       <created>1659627645541</created>
@@ -286,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661171035160</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pet Project predeploy">
+      <created>1668601579954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668601579954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +277,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pet Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pet Project" />
+    <MESSAGE value="Pet Project predeploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pet Project predeploy" />
   </component>
 </project>
