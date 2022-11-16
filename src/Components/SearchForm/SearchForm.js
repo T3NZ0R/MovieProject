@@ -60,7 +60,7 @@ const SearchForm = () => {
                         dropdownItems.map(item =>
                             <div
                                 key={item['id']}
-                            ><NavLink className="dropdownItem" to={`/movie/${item.id}`}
+                            ><NavLink className="dropdownItem" to={`/movie-project/movie/${item.id}`}
                                       onClick={() => dispatch(addMovieId(item.id))}>{item['title']}</NavLink>
                             </div>)
                     }

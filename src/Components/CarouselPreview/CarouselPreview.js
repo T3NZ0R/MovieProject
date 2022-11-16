@@ -53,7 +53,7 @@ const CarouselPreview = () => {
 
                                 <button className="buttonPoster"><NavLink
                                     className={"posterLink"}
-                                    to={`/movie/${item.id}`}
+                                    to={`/movie-project/movie/${item.id}`}
                                     onClick={() => dispatch(addMovieId(item.id))}>Learn
                                     more</NavLink></button>
 

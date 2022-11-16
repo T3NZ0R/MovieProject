@@ -24,7 +24,7 @@ const Upcoming = () => {
             <div className={'typeTitle'}>
                 <span className={'type'}>Upcoming</span>
                 <button className={"seeAllButton"}>
-                    <NavLink className={"typeLink"} to={'/upcoming'} onClick={() => dispatch(addTypeOfMovies(urls.upcoming))}>See all</NavLink>
+                    <NavLink className={"typeLink"} to={'/movie-project/upcoming'} onClick={() => dispatch(addTypeOfMovies(urls.upcoming))}>See all</NavLink>
                 </button>
 
             </div>

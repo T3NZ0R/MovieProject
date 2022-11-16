@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {Route, NavLink, Routes, Outlet, useLocation} from "react-router-dom";
 
 import {GenreBadge, SearchForm} from "../index";
-import {MoviesGenrePage, MoviesListPage, WatchMovie, Home, Favourites, AboutUs} from "../../Pages";
+import {MoviesGenrePage, MoviesListPage, WatchMovie, Home, Favourites, AboutUs, NoInfo} from "../../Pages";
 import {addSessionId} from "../../Store";
 import 'bootstrap/dist/css/bootstrap.css';
 import './header.style.css';
@@ -37,22 +37,23 @@ const Header = () => {
             });
         }
 
+        console.log(path);
 
         if (home) {
             switch (path) {
-                case '/':
+                case '/movie-project/':
                     home.classList.add("activePage");
                     genre.style.color = 'unset';
                     genre.style.opacity = '0.6';
                     customHover();
                     break;
-                case '/favourites':
+                case '/movie-project/favourites':
                     favouritesPage.classList.add("activePage");
                     genre.style.color = 'unset';
                     genre.style.opacity = '0.6';
                     customHover();
                     break;
-                case '/about-us':
+                case '/movie-project/about-us':
                     aboutUs.classList.add("activePage");
                     genre.style.color = 'unset';
                     genre.style.opacity = '0.6';
@@ -77,10 +78,10 @@ const Header = () => {
                         <div className={'logoImg'}>
                             <img src={logo} alt="Logo"/>
                         </div>
-                        <NavLink to={'/'} className={"link"} id={'home'}>Home</NavLink>
+                        <NavLink to={'movie-project/'} className={"link"} id={'home'}>Home</NavLink>
                         <GenreBadge clasName={"link"} id={'genre'}/>
-                        <NavLink to={'/favourites'} className={"link"} id={'favourites'}>Favourites</NavLink>
-                        <NavLink to={'/about-us'} className={"link"} id={'aboutUs'}>About us</NavLink>
+                        <NavLink to={'movie-project/favourites'} className={"link"} id={'favourites'}>Favourites</NavLink>
+                        <NavLink to={'movie-project/about-us'} className={"link"} id={'aboutUs'}>About us</NavLink>
                     </div>
 
                     <SearchForm/>
@@ -91,23 +92,25 @@ const Header = () => {
 
 
                 <Routes>
-                    <Route path={'/'} index element={<Home/>}/>
+                    <Route path={'movie-project/'} index element={<Home/>}/>
 
-                    <Route path={'/upcoming'} element={<MoviesListPage/>}/>
+                    <Route path={'movie-project/upcoming'} element={<MoviesListPage/>}/>
 
-                    <Route path={'/movie/:id'} element={<WatchMovie/>}/>
+                    <Route path={'movie-project/movie/:id'} element={<WatchMovie/>}/>
 
-                    <Route path={'/top_rated'} element={<MoviesListPage/>}/>
+                    <Route path={'movie-project/top_rated'} element={<MoviesListPage/>}/>
 
-                    <Route path={'/popular'} element={<MoviesListPage/>}/>
+                    <Route path={'movie-project/popular'} element={<MoviesListPage/>}/>
 
-                    <Route path={'/now_playing'} element={<MoviesListPage/>}/>
+                    <Route path={'movie-project/now_playing'} element={<MoviesListPage/>}/>
 
-                    <Route path={'/genre/:genre'} element={<MoviesGenrePage/>}/>
+                    <Route path={'movie-project/genre/:genre'} element={<MoviesGenrePage/>}/>
 
-                    <Route path={'/favourites'} element={<Favourites/>}/>
+                    <Route path={'movie-project/favourites'} element={<Favourites/>}/>
 
-                    <Route path={'/about-us'} element={<AboutUs/>}/>
+                    <Route path={'movie-project/about-us'} element={<AboutUs/>}/>
+
+                    <Route path={'*'} element={<NoInfo/>}/>
 
 
                 </Routes>

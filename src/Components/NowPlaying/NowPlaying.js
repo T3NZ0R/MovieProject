@@ -25,7 +25,7 @@ const NowPlaying = () => {
             <div className={'typeTitle'}>
                 <span className={'type'}>Now playing</span>
                 <button className={"seeAllButton"}>
-                    <NavLink className={'typeLink'} to={'/now_playing'}
+                    <NavLink className={'typeLink'} to={'/movie-project/now_playing'}
                           onClick={() => dispatch(addTypeOfMovies(urls.nowPlaying))}>See all</NavLink>
                 </button>
             </div>

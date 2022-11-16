@@ -49,7 +49,7 @@ const MovieInfo = ({movie}) => {
                                 fillColor={"#85CFCB"}
                                 emptyColor={"#496767"}/>
                     </div>
-                    <button className={'movieElementButton'}><NavLink className={'movieElementLink'} to={`/movie/${id}`}
+                    <button className={'movieElementButton'}><NavLink className={'movieElementLink'} to={`/movie-project/movie/${id}`}
                                                                       onClick={() => dispatch(addMovieId(id))}>Learn more</NavLink>
                     </button>
                 </div>

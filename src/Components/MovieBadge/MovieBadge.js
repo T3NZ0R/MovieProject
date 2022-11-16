@@ -23,7 +23,7 @@ const MovieBadge = ({movie}) => {
                 <img className={'movieImg'} src={movieImg} alt="movieImg"/>
 
                 <NavLink className={'hoverCard'}
-                         to={`/movie/${id}`}
+                         to={`/movie-project/movie/${id}`}
                          onClick={() =>
                              dispatch(addMovieId(id))}>
                     <div ></div>
@@ -32,7 +32,7 @@ const MovieBadge = ({movie}) => {
 
                 <div className={'movieText'}>
                     <NavLink className={'movieLink'}
-                             to={`/movie/${id}`}
+                             to={`/movie-project/movie/${id}`}
                              onClick={() =>
                                  dispatch(addMovieId(id))}>
                         {title}</NavLink>
