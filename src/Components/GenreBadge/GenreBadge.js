@@ -19,7 +19,7 @@ const GenreBadge = () => {
 
     return (
         <>
-            <DropdownButton className={'genre'} title="Genre">
+            <DropdownButton className={'genre'} id={'genre'} title="Genre">
                 {genres.map(value =>
                     <Dropdown.Item key={value.id} onClick={() => dispatch(addGenreId(value.id))}>
                         <NavLink to={`/genre/${value.name.toLowerCase()}`}>{value.name}</NavLink></Dropdown.Item>

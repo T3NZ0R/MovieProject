@@ -1,9 +1,12 @@
+.watchMovieWrap {
+    width: 1200px;
+}
+
 .movieWrap {
-    padding-top: 120px;
+    padding-top: 180px;
     display: flex;
     flex-direction: row;
-    margin-left: 200px;
-    width: 85%;
+    width: 1200px;
 }
 
 .hide {
@@ -11,66 +14,266 @@
 }
 
 .movieImage {
-    width: 450px;
-    border-radius: 40px;
+    width: 456px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
 }
 
 .movieInfoWrap {
-    margin-left: 120px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .movieTitle {
-    font-size: 28px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #85CFCB;
 }
 
-.blue{
-    color: #00C2FF;
+.lightGreen {
+    color: #85CFCB;
 }
 
 
-.white{
-    color: #FFFFFF;
+.green {
+    color: #219897;
     display: flex;
 
 }
 
-.infoBlock{
-    width: 230px;
+.infoBlock {
+    width: 250px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.textInfoWrap{
+.textInfoWrap {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 17px;
     font-size: 16px;
     margin-top: 30px;
 }
 
-.rateWrap{
-    margin-top: 30px;
+.rateWrap {
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
 }
 
-.rateButton{
-    background: #ff0000;
-    border-radius: 30px;
-    color: #FFFFFF;
-    width: 100px;
-    padding: 5px;
-    border-color: rgba(0, 0, 0, 0);
+.rateButton {
+    background: #85CFCB;
+    border-radius: 10px;
+    width: 210px;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+
+    color: #28282C;
     margin-left: 20px;
 }
 
-.overviewBlock{
-    margin-left: 200px;
-    font-size: 18px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 32px;
-    width: 1100px;
+.rateButton:hover{
+    background: #219897;
+}
+
+.overviewBlock {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 80px;
+    width: 740px;
+}
+
+.movieTrailer {
+    margin-top: 80px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+iframe {
+    width: 1200px;
+    height: 700px;
+
+}
+
+.trailerNotAvailableBlockWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trailerNotAvailableBlock {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #19191B;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.messageBlock {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+
     color: #FFFFFF;
-    padding: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.messageBlock > img {
+    width: 112px;
+    margin-bottom: 30px;
+}
+
+.green > span {
+    width: 450px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.rateMessage {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.ratingStars {
+    margin-left: 35px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.red {
+    background: #E47171;
+}
+
+.favouritesButton {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 200px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(17.5px);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.favouritesButtonActive {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 200px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(17.5px);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #85CFCB;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.favouritesButton:hover{
+    opacity: 1;
+}
+
+.favouritesButton > span > img{
+    margin-left: 17px;
+    margin-right: 10px;
+}
+
+.favouritesButtonActive > span > img{
+    margin-left: 17px;
+    margin-right: 10px;
+}
+
+.movieImageWrap {
+    position: relative;
+}
+
+.favouritesButtonHide{
+    display: none;
 }
 
 

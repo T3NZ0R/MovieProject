@@ -5,7 +5,6 @@ export * from './MovieBadge/MovieBadge';
 export * from './MovieInfo/MovieInfo';
 export * from './NowPlaying/NowPlaying';
 export * from './Popular/Popular';
-export * from './PosterPreview/PosterPreview';
 export * from './SearchForm/SearchForm';
 export * from './TopRated/TopRated';
 export * from './Upcoming/Upcoming';

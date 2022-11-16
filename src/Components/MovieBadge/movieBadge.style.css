@@ -1,32 +1,70 @@
 .movieImg {
-    width: 260px;
-    border-radius: 30px 30px 0 0;
+    width: 285px;
+    height: 428px;
+    border-radius: 17px;
+    position: relative;
 }
 
 .movie {
+    width: 285px;
+    height: 520px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2.5px);
+    border-radius: 17px;
     display: flex;
     flex-direction: column;
-
+    position: relative;
 }
 
-.movieButton {
-    border-radius: 0 0 30px 30px;
+.hoverCard{
+    width: 285px;
+    height: 428px;
+    border-radius: 17px;
+    position: absolute;
+}
+
+.hoverCard:hover{
+    background:  url("../../img/hoverLogo.png") no-repeat center,
+    rgba(0, 0, 0, 0.5);
+}
+
+
+.movie:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.movieLink {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #85CFCB;
+    text-align: center;
+    margin-top: 11px;
+    text-decoration: none;
     height: 40px;
-    border-color: rgba(0, 0, 0, 0);
-    background: rgba(77,190,255,0.38);
 }
 
-.movieButton:hover{
-    height: 50px;
+.movieLink:hover {
+    color: #219897;
 }
 
-.movieLink{
-    color: #FFFFFF;
-    text-decoration: none;
+.movieYear {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #D9D9D9;
+    text-align: center;
+    margin-top: 3px;
 }
 
-.movieLink:hover{
-    color: #fff850;
-    text-decoration: none;
+.movieText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 

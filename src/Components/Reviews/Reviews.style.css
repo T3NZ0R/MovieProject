@@ -1,0 +1,269 @@
+.reviewsFullWrap {
+    width: 1200px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewTitle {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.reviewButton {
+    background: #85CFCB;
+    border-radius: 10px;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+
+.reviewButton > a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #28282C;
+}
+
+.reviewButton > a:hover {
+    color: #28282C;
+}
+
+.reviewButton:hover {
+    background: #219897;
+}
+
+.reviewsTopWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.reviewsWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.emptyReviews {
+    width: 1200px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+}
+
+.emptyReviews {
+    backdrop-filter: blur(2.5px);
+}
+
+.blurBackground {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+
+}
+
+
+.leaveReviewWrap {
+    background: #28282C;
+    border-radius: 10px;
+    width: 1200px;
+    height: 481px;
+}
+
+.leaveReviewWrap > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaveReviewTop {
+    display: flex;
+    flex-direction: row;
+    width: 1120px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leaveReviewTop > h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.leaveReviewTop > button {
+    background: none;
+    border: none;
+}
+
+.leaveReviewTop > button > img {
+    width: 46px;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 37px;
+}
+
+.leaveReviewInput {
+    width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.leaveReviewInput > input {
+    border: none;
+    width: 535px;
+    height: 50px;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+}
+
+.leaveReviewInput > input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    top: -1px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.reviewInput {
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reviewInputWrap {
+    display: flex;
+    flex-direction: column;
+    width: 545px;
+    position: relative;
+}
+
+
+.leaveReviewTextArea {
+    margin-top: 20px;
+    width: 1120px;
+    position: relative;
+}
+
+.leaveReviewTextArea > textarea {
+    border: none;
+    width: 1120px;
+    height: 165px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.leaveReviewButtonWrap {
+    width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 27px;
+
+}
+
+.buttonLeaveReview {
+    background: #85CFCB;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: none;
+}
+
+.buttonLeaveReview:hover {
+    background: #219897;
+}
+
+.buttonText {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+
+    color: #28282C;
+}
+
+.hideReview {
+    display: none;
+}
+
+.stopScroll {
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.validationMessage {
+    font-family: 'Inter', sans-serif;
+    color: #E47171;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.topSpace {
+    top: 175px;
+}
+
+

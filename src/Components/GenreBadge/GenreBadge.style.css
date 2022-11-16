@@ -1,8 +1,7 @@
 .genre {
-    background: #00C2FF;
     display: flex;
     border: none;
-    color: white;
+    color: #FFFFFF;
     justify-content: center;
     align-items: center;
     width: 100px;

@@ -1,54 +1,121 @@
 .movieItem {
     display: flex;
     flex-direction: row;
-    border: #3E3E67 2px solid;
-    border-radius: 30px;
-    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    margin-bottom: 40px;
     color: #FFFFFF;
 }
 
 .moviePhoto {
-    width: 220px;
-    border-radius: 30px;
+    width: 230px;
+    height: 345px;
+    border-radius: 16px;
     filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.25));
 }
 
+.movieElement{
+    width: 850px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    flex-direction: column;
+
+}
+
 .movieElementTitle {
-    padding-top: 20px;
-    margin-left: 60px;
-    font-size: 18px;
-    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 160%;
+    color: #85CFCB;
 }
 
 .movieElementOverview {
-    padding-top: 10px;
-    margin-left: 60px;
-    width: 85%;
-    font-size: 12px;
-    height: 120px;
-}
-
-.starsRating {
-    padding-top: 20px;
-    margin-left: 60px;
+    max-height: 80px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    -webkit-box-orient: vertical;
+    width: 850px;
+    height: 100px;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
 }
 
 .movieElementButton {
-    background: #00C2FF;
-    border-radius: 30px;
-    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 230px;
-    padding: 5px;
+    height: 50px;
     border-color: rgba(0, 0, 0, 0);
-    margin-top: 30px;
-    margin-left: 60px;
+    background: #85CFCB;
+    border-radius: 10px;
+}
+
+.movieElementButton:hover{
+    background: #219897;
 }
 
 .movieElementLink {
-    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #28282C;
     text-decoration: none;
 }
 
 .movieElementLink:hover {
-    color: #fff850;
+    color: #28282C;
+}
+
+.movieElementBottomWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.movieElementReleaseDate{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #85CFCB;
+}
+
+.movieElementLanguage{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #85CFCB;
+}
+
+.icon{
+    width: 24px;
+    margin-right: 24px;
+    padding: 5px;
+}
+
+.moviePhotoWrap{
+    width: 230px;
+    height: 345px;
 }

@@ -1,24 +1,165 @@
-.footer{
-    background: #25354F;
-    color: white;
-    height: 200px;
-    width: 100%;
+.footerBackground {
+    display: flex;
+    width: 99vw;
+    flex-direction: row;
+    justify-content: center;
+    height: 358px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
+    margin-top: 80px;
+}
+
+.footerInfoWrap {
+    width: 1280px;
+    padding: 0 40px;
+
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 70px;
 }
 
-.icon{
-    width: 30px;
-    margin: 18px;
+.support {
+    display: flex;
+    flex-direction: column;
 }
 
-.username{
+.supportStyle {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+    margin-bottom: 10px;
+}
+
+.gmailStyle {
     color: #FFFFFF;
-    text-decoration: none;
+    opacity: 0.8;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
 }
 
-.username:hover{
-    color: #fff850;
+.allRight {
+    margin-top: 30px;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactStyle {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+    margin-bottom: 14px;
+}
+
+.numberStyle {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 5px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.textSocial {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+    margin-bottom: 17px;
+}
+
+.photoMedia {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    align-items: center;
+
+}
+
+.telegram {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram {
+    width: 34px;
+    height: 34px;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+
+}
+
+.linkedin {
+    width: 38px;
+    height: 38px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textAddress {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+    margin-bottom: 10px;
+}
+
+.textFaq {
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #85CFCB;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.addressFaq {
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+
+    opacity: 0.8;
 }

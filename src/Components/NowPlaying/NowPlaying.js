@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import {addTypeOfMovies, getMovieList} from "../../Store";
 import {MovieBadge} from "../";
@@ -24,8 +24,10 @@ const NowPlaying = () => {
 
             <div className={'typeTitle'}>
                 <span className={'type'}>Now playing</span>
-                <Link className={'typeLink'} to={'/now_playing'}
-                      onClick={() => dispatch(addTypeOfMovies(urls.nowPlaying))}>See all</Link>
+                <button className={"seeAllButton"}>
+                    <NavLink className={'typeLink'} to={'/now_playing'}
+                          onClick={() => dispatch(addTypeOfMovies(urls.nowPlaying))}>See all</NavLink>
+                </button>
             </div>
             <div className={'movies'}>
                 {movies.map(value => <MovieBadge key={value.id} movie={value}/>)}

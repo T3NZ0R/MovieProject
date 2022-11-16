@@ -1,15 +1,67 @@
-.moviesList{
-    width: 75%;
-    margin-left: 200px;
+.moviesList {
+    width: 1200px;
 }
 
-.currentType{
-    color: #FFFFFF;
-    padding-top: 120px;
+.currentType {
+    padding-top: 185px;
+    padding-left: 45%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 160%;
+    color: #85CFCB;
+    margin-bottom: 60px;
 }
+
+.sortingGenre {
+    align-self: flex-end;
+}
+
+.sortingGenre > .btn-primary{
+    width: 154px;
+    height: 42px;
+    border-radius: 20px;
+    background: #85CFCB;
+    color: #28282C;
+    border: none;
+    box-shadow: none;
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 20px;
+}
+
+.sortingGenre > .btn-primary:after{
+    content:none;
+}
+
+.sortingGenre > .btn-primary:focus{
+    box-shadow: none;
+    background: #85CFCB;
+}
+
+.sortingGenre > .btn-primary:before{
+    content: url("../../img/Sort.png");
+    position: absolute;
+    left: 100px;
+    bottom: 13px;
+}
+
+.sortingGenre > .btn-primary:hover{
+    background: #219897;
+    color: #28282C;
+}
+
+#noSort{
+    color: #219897;
+}
+
+

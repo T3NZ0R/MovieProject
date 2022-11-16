@@ -3,25 +3,81 @@ import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
 import {Rating} from "react-simple-star-rating";
 
-import {getMovieById, rateMovieById, removeRating, switcherController} from "../../Store";
-import {baseURL_img} from "../../Constants";
+import {
+    addMovieToFavourites, deleteMovieFromFavourites,
+    getMovieById,
+    getMovieVideoById, getReviewMovieById,
+    getSimilarMoviesById,
+    rateMovieById,
+    removeRating,
+    switcherController
+} from "../../Store";
+
+import {baseURLImg} from "../../Constants";
+import {SimilarMovies} from "../../Components/SimilarMovies/SimilarMovies";
 import './watchMovie.style.css';
+
+import trailerNotAvailableImage from '../../img/Group 76.png';
+import likeFavourites from '../../img/Favourites.png';
+import likeFavouritesActive from '../../img/FavouritesActive.png';
+
+import {Reviews} from "../../Components/Reviews/Reviews";
 
 const WatchMovie = () => {
 
     let {id} = useParams();
 
-    const {movie} = useSelector(state => state['movieListReducer']);
+
+    const {movie, movieTrailer, favourites} = useSelector(state => state['movieListReducer']);
     const {sessionId, switcher} = useSelector(state => state['rateReducer']);
 
     const dispatch = useDispatch();
-    let deleteButton = document.getElementById('rate');
+
+    let deleteRateButton = document.getElementById('deleteRate');
+    let rateButton = document.getElementById('rate');
+
+    let likeFavouritesButton = document.getElementById('likeFavourites');
+    let likeFavouritesActiveButton = document.getElementById('likeFavouritesActive');
+
+    if (likeFavouritesButton !== null){
+        likeFavouritesButton.classList.remove('favouritesButtonHide');
+        likeFavouritesActiveButton.classList.add('favouritesButtonHide');
+    }
+
+    if (favourites.length > 0) {
+
+        for (let i = 0; i < favourites.length; i++) {
+            console.log(favourites[i].id);
+            if (Number(favourites[i].id) === Number(id)) {
+                console.log(favourites[i].id, id);
+                if (likeFavouritesButton !== null){
+                    likeFavouritesButton.classList.add('favouritesButtonHide');
+                    likeFavouritesActiveButton.classList.remove('favouritesButtonHide');
+                }
+                break;
+            }
+        }
+    }
 
     useEffect(() => {
         dispatch(getMovieById(id));
-    }, [dispatch, id]);
+        dispatch(getMovieVideoById(id));
+        dispatch(getSimilarMoviesById(id));
+        dispatch(getReviewMovieById(id));
+    }, [id, dispatch]);
 
-    let movieImg = baseURL_img + movie['poster_path'];
+    let movieImg = baseURLImg + movie['poster_path'];
+
+    let TrailerLink;
+
+    if (typeof movieTrailer !== "undefined") {
+        for (let i = 0; i < movieTrailer.length; i++) {
+            if (movieTrailer[i].type === "Trailer") {
+                TrailerLink = 'https://www.youtube.com/embed/' + movieTrailer[i].key;
+                break;
+            }
+        }
+    }
 
     let getInfo = (data) => {
         let info = '';
@@ -39,15 +95,42 @@ const WatchMovie = () => {
     const handleRating = (rate) => {
         dispatch(switcherController(!switcher));
         dispatch(rateMovieById(id, rate, sessionId));
-        deleteButton.classList.remove('hide');
+    }
+
+    const addToFavourites = (data) => {
+        dispatch(addMovieToFavourites(data));
+    }
+
+    const deleteFromFavourites = (data) => {
+        dispatch(deleteMovieFromFavourites(data));
     }
 
     return (
-        <div >
+        <div className={"watchMovieWrap"}>
 
             <div className={"movieWrap"}>
-                <div>
+                <div className={"movieImageWrap"}>
                     <img className={'movieImage'} src={movieImg} alt="movieImg"/>
+                    <button className={"favouritesButton"}
+                            id={'likeFavourites'}
+                            onClick={() => {
+                                likeFavouritesButton.classList.add('favouritesButtonHide');
+                                likeFavouritesActiveButton.classList.remove('favouritesButtonHide');
+                                addToFavourites(movie);
+                            }}
+                    ><span><img src={likeFavourites} alt=""/></span> Add to favourites
+                    </button>
+
+                    <button className={"favouritesButtonActive favouritesButtonHide"}
+                            id={'likeFavouritesActive'}
+                            onClick={() => {
+                                likeFavouritesButton.classList.remove('favouritesButtonHide');
+                                likeFavouritesActiveButton.classList.add('favouritesButtonHide');
+                                deleteFromFavourites(movie.id);
+                            }}
+                    ><span><img src={likeFavouritesActive} alt=""/></span> Add to favourites
+                    </button>
+
                 </div>
                 <div className={'movieInfoWrap'}>
 
@@ -56,67 +139,88 @@ const WatchMovie = () => {
                     </div>
 
                     <div className={'textInfoWrap'}>
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Tagline:</div>
-                            <span className={'blue'}>{movie['tagline']}</span>
+                            <span className={'lightGreen'}>{movie['tagline'] !== '' ?  movie['tagline'] : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Budget:</div>
-                            <span className={'blue'}>{movie['budget']} $</span>
+                            <span className={'lightGreen'}>{movie['budget'] !== 0 ? movie['budget'] + ' $' : 'No info'} </span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Revenue:</div>
-                            <span className={'blue'}>{movie['revenue']} $</span>
+                            <span className={'lightGreen'}>{movie['revenue'] !== 0 ? movie['revenue'] + ' $' : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Runtime:</div>
-                            <span className={'blue'}>{movie['runtime']}min</span>
+                            <span className={'lightGreen'}>{movie['runtime'] !== 0 ? movie['runtime'] + ' min' : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Release date:</div>
-                            <span className={'blue'}>{movie['release_date']}</span>
+                            <span className={'lightGreen'}>{movie['release_date'] ? movie['release_date'].replaceAll('-','/')  : 'No info' }</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Country:</div>
-                            <span className={'blue'}>{movie['production_countries'] ? getInfo(movie['production_countries']) : 'error'}</span>
+                            <span
+                                className={'lightGreen'}>{movie['production_countries'] ? getInfo(movie['production_countries']) : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Genres:</div>
-                            <span className={'blue'}>{movie['genres'] ? getInfo(movie['genres']) : 'error'}</span>
+                            <span className={'lightGreen'}>{movie['genres'] ? getInfo(movie['genres']) : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
+                        <div className={'green'}>
                             <div className={'infoBlock'}>Spoken languages:</div>
-                            <span className={'blue'}>{movie['spoken_languages'] ? getInfo(movie['spoken_languages']) : 'error'}</span>
+                            <span
+                                className={'lightGreen'}>{movie['spoken_languages'] ? getInfo(movie['spoken_languages']) : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
-                            <div className={'infoBlock'}>Production companies: </div>
-                            <span className={'blue'}>{movie['production_companies'] ? getInfo(movie['production_companies']) : 'error'}</span>
+                        <div className={'green'}>
+                            <div className={'infoBlock'}>Production companies:</div>
+                            <span
+                                className={'lightGreen'}>{movie['production_companies'] ? getInfo(movie['production_companies']) : 'No info'}</span>
                         </div>
 
-                        <div className={'white'}>
-                            <div className={'infoBlock'}>Vote count: </div>
-                            <span className={'blue'}>{movie['vote_count']}</span>
+                        <div className={'green'}>
+                            <div className={'infoBlock'}>Vote count:</div>
+                            <span className={'lightGreen'}>{movie['vote_count'] !== 0 ? movie['vote_count'] : 'No info'}</span>
                         </div>
+
+                        <div className={'green'}>
+                            <div className={'infoBlock'}>IMDB:</div>
+                            <span
+                                className={'lightGreen'}>({movie['vote_average'] ? movie['vote_average'].toFixed(1) : 'No info'})</span>
+                        </div>
+                        <h4 className={'green mb-3 rateMessage'}>Rate this movie:</h4>
                     </div>
 
                     <div className={"rateWrap"}>
 
-                        <h4 className={'white mb-3'}>Rating:</h4>
-                        <Rating ratingValue={movie['vote_average'] * 10} iconsCount={10} fillColor={"#00C2FF"}
+                        <Rating className={"ratingStars"}
+                                ratingValue={0}
+                                iconsCount={10}
+                                fillColor={"#219897"}
+                                emptyColor={"#85CFCB"}
                                 readonly={switcher} onClick={handleRating}/>
-                        <button className={'hide rateButton'} id={'rate'} onClick={() => {
+
+                        <button className={'rateButton'} id={'rate'} onClick={() => {
+                            rateButton.classList.add('hide');
+                            deleteRateButton.classList.remove('hide');
+                        }}>Leave my rate
+                        </button>
+
+                        <button className={'hide rateButton red'} id={'deleteRate'} onClick={() => {
                             dispatch(removeRating(id, sessionId));
-                            deleteButton.classList.add('hide');
+                            deleteRateButton.classList.add('hide');
+                            rateButton.classList.remove('hide');
                             dispatch(switcherController(!switcher));
-                        }}>delete
+                        }}>Delete my rate
                         </button>
                     </div>
 
@@ -125,12 +229,37 @@ const WatchMovie = () => {
             </div>
 
             <div className={'overviewBlock'}>
-                {movie['overview']}
+                <h2 className={"description"}>Description</h2>
+                {movie['overview'] !== ''? movie['overview'] : 'We can\'t provide a short description for this movie yet.'}
             </div>
 
+            {typeof movieTrailer !== "undefined" ?
+                <div className={'movieTrailer'}>
+                    <iframe title={movie.title} src={TrailerLink}></iframe>
+                </div>
+                :
+                <div className={'trailerNotAvailableBlockWrap'}>
+                    <div className={'trailerNotAvailableBlock'}>
+                        <div className={'messageBlock'}>
+                            <img src={trailerNotAvailableImage} alt=""/>
+                            <p>Oops... Trailer is not available(</p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <SimilarMovies/>
+            <Reviews movieId={id}/>
 
         </div>
+
+
     );
 };
 
 export {WatchMovie};
+
+
+
+
+

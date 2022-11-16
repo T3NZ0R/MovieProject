@@ -1,16 +1,19 @@
 import React from 'react';
 
-import {PosterPreview, NowPlaying, Popular, TopRated, Upcoming} from "../../Components";
+import {NowPlaying, Popular, TopRated, Upcoming} from "../../Components";
+import {CarouselPreview} from "../../Components/CarouselPreview/CarouselPreview";
+import './Home.style.css';
+
 
 const Home = () => {
 
     return (
-        <div>
-            <PosterPreview/>
-            <NowPlaying/>
+        <div className={'homeWrap'}>
+            <CarouselPreview/>
             <Upcoming/>
-            <TopRated/>
             <Popular/>
+            <TopRated/>
+            <NowPlaying/>
         </div>
     );
 };

@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import {addTypeOfMovies, getMovieList} from "../../Store";
 import {MovieBadge} from "../";
 import {urls} from "../../Constants";
+import '../NowPlaying/type.style.css'
+
 
 const TopRated = () => {
 
@@ -22,7 +24,9 @@ const TopRated = () => {
         <div>
             <div className={'typeTitle'}>
                 <span className={'type'}>Top rated</span>
-                <Link to={'/top_rated'} onClick={() => dispatch(addTypeOfMovies(urls.topRated))}>See all</Link>
+                <button className={"seeAllButton"}>
+                    <NavLink className={"typeLink"} to={'/top_rated'} onClick={() => dispatch(addTypeOfMovies(urls.topRated))}>See all</NavLink>
+                </button>
             </div>
 
             <div className={'movies'}>

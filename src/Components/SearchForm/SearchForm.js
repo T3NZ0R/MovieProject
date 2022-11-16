@@ -6,6 +6,8 @@ import {useClickOutside} from 'react-click-outside-hook';
 
 import {addMovieId, searchMovie} from "../../Store";
 import './searchForm.style.css';
+import searchIcon from '../../img/Vector.png'
+
 
 const SearchForm = () => {
 
@@ -47,10 +49,10 @@ const SearchForm = () => {
             <div className="search-container" ref={ref}>
                 <div className="search-inner">
                     <form onSubmit={handleSubmit(submit)}>
-                        <button className={'button'}><img className={'iconSearch'}
-                                                          src="https://www.clipartmax.com/png/full/74-742441_preamps-white-search-icon-svg.png"
-                                                          alt={' '}/></button>
                         <input type="text" placeholder={'Search...'} {...register('movie')} />
+                        <button className={'button'}><img className={'iconSearch'}
+                                                          src={searchIcon}
+                                                          alt={' '}/></button>
                     </form>
                 </div>
                 <div className="dropdownItems dropdown" id={'dropdownItems'}>

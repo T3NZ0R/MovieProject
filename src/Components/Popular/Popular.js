@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import {addTypeOfMovies, getMovieList} from "../../Store";
 import {MovieBadge} from "../";
@@ -22,7 +22,9 @@ const Popular = () => {
         <div>
             <div className={'typeTitle'}>
                 <span className={'type'}>Popular</span>
-                <Link to={'/popular'} onClick={() => dispatch(addTypeOfMovies(urls.popular))}>See all</Link>
+                <button className={"seeAllButton"}>
+                    <NavLink className={"typeLink"} to={'/popular'} onClick={() => dispatch(addTypeOfMovies(urls.popular))}>See all</NavLink>
+                </button>
             </div>
 
             <div className={'movies'}>

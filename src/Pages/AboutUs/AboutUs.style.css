@@ -1,0 +1,73 @@
+
+.aboutUsWrap{
+    width: 1200px;
+    margin-top: 350px;
+}
+
+.aboutUsItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    margin-bottom: 400px;
+    justify-content: center;
+}
+
+.arrowImgAboutUs {
+    height: 88px;
+    width: 43px;
+
+}
+
+.textInfoAboutUsWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topTextAboutUs {
+    color: #FFFFFF;
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    padding-left: 53px;
+}
+
+.mainTextAboutUs {
+    display: flex;
+    flex-direction: row;
+    padding-left: 53px;
+    color: #85CFCB;
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 135px;
+    text-transform: uppercase;
+
+}
+
+.bottomTextAboutUs {
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-left: 53px;
+}
+
+.iconAboutUs {
+    position: absolute;
+    left: 410px;
+    height: 223px;
+    width: 244px;
+    z-index: 1;
+    top: 35px;
+}
+
+

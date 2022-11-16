@@ -1,0 +1,30 @@
+.errorPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url("../../img/3071271275e3f7dbf0b4b392e08415d1.png"), #28282C;
+    position: absolute;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 150px;
+}
+
+.zeroIcon{
+    height: 250px;
+}
+
+.errorPage > h1{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #85CFCB;
+    font-size: 500px;
+}
+
+.errorPage > h2{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #219897;
+    font-size: 70px;
+    position: absolute;
+    top: 63vh;
+}
