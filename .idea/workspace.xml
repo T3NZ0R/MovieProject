@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project predeploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project predeploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +174,7 @@
       <workItem from="1668075691811" duration="21601000" />
       <workItem from="1668435614290" duration="15374000" />
       <workItem from="1668459193986" duration="36209000" />
-      <workItem from="1668600932037" duration="1005000" />
+      <workItem from="1668600932037" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Pet Project">
       <created>1659627645541</created>
@@ -228,7 +225,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668601579954</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pet Project predeploy">
+      <created>1668601992834</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668601992834</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Pet Project predeploy">
+      <created>1668602209175</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668602209175</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Pet Project predeploy">
+      <created>1668602241445</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668602241445</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
