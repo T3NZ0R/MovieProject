@@ -2,7 +2,7 @@
   "name": "movie-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://t3nz0r.github.io/MovieProject/",
+  "homepage": "https://t3nz0r.github.io/movie-project/",
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "@reduxjs/toolkit": "^1.8.3",

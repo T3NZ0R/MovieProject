@@ -109,7 +109,7 @@ const Header = () => {
 
                     <Route path={'/about-us'} element={<AboutUs/>}/>
 
-                    <Route path={'*'} element={<NoInfo/>}/>
+                    {/*<Route path={'*'} element={<NoInfo/>}/>*/}
 
                 </Routes>
             </div>
