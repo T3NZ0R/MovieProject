@@ -16,7 +16,7 @@ const MoviesListPage = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        moviesListService.getMovieList(moviesType, page).then(value => setMovies(value['results']))
+        moviesListService.getMovieList(moviesType, page).then(value => setMovies(value['results']));
     }, [moviesType, page]);
 
 
@@ -29,19 +29,19 @@ const MoviesListPage = () => {
                 {movies.map(value => <MovieInfo key={value.id} movie={value}/>)}
             </div>
             {page !== 1 ?
-                <Pagination >
+                <Pagination>
                     <Pagination.Prev onClick={() => dispatch(addPageNumber('prev'))}/>
-                    <Pagination.Item onClick={() => dispatch(addPageNumber('prev'))} >{page - 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('prev'))}>{page - 1}</Pagination.Item>
                     <Pagination.Item active>{page}</Pagination.Item>
-                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))} >{page + 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))}>{page + 1}</Pagination.Item>
                     <Pagination.Next onClick={() => dispatch(addPageNumber('next'))}/>
                 </Pagination>
                 :
                 <Pagination>
                     <Pagination.Prev onClick={() => dispatch(addPageNumber('prev'))}/>
                     <Pagination.Item active>{page}</Pagination.Item>
-                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))} >{page + 1}</Pagination.Item>
-                    <Pagination.Item onClick={() => dispatch(addPageNumber('twoStep'))} >{page + 2}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('next'))}>{page + 1}</Pagination.Item>
+                    <Pagination.Item onClick={() => dispatch(addPageNumber('twoStep'))}>{page + 2}</Pagination.Item>
                     <Pagination.Next onClick={() => dispatch(addPageNumber('next'))}/>
                 </Pagination>
             }

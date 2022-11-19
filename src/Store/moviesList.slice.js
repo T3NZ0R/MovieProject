@@ -155,6 +155,7 @@ const movieListSlice = createSlice({
             state.sort = action.payload;
         },
         addPageNumber: (state, action) => {
+            window.scrollTo(0, 0);
             switch (action.payload) {
                 case 'next':
                     state.page = state.page + 1;

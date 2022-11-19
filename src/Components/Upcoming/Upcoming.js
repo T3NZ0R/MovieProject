@@ -24,7 +24,10 @@ const Upcoming = () => {
             <div className={'typeTitle'}>
                 <span className={'type'}>Upcoming</span>
                 <button className={"seeAllButton"}>
-                    <NavLink className={"typeLink"} to={'/movie-project/upcoming'} onClick={() => dispatch(addTypeOfMovies(urls.upcoming))}>See all</NavLink>
+                    <NavLink className={"typeLink"} to={'/movie-project/upcoming'} onClick={() => {
+                        dispatch(addTypeOfMovies(urls.upcoming))
+                        window.scrollTo(0, 0)
+                    }}>See all</NavLink>
                 </button>
 
             </div>

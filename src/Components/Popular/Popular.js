@@ -23,7 +23,10 @@ const Popular = () => {
             <div className={'typeTitle'}>
                 <span className={'type'}>Popular</span>
                 <button className={"seeAllButton"}>
-                    <NavLink className={"typeLink"} to={'/movie-project/popular'} onClick={() => dispatch(addTypeOfMovies(urls.popular))}>See all</NavLink>
+                    <NavLink className={"typeLink"} to={'/movie-project/popular'} onClick={() => {
+                        dispatch(addTypeOfMovies(urls.popular))
+                        window.scrollTo(0, 0)
+                    }}>See all</NavLink>
                 </button>
             </div>
 

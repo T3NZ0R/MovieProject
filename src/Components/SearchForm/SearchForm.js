@@ -15,7 +15,6 @@ const SearchForm = () => {
 
     let dropdownItems = searchMovies.slice(0, 10);
 
-
     const {register, handleSubmit, reset} = useForm();
 
     const dispatch = useDispatch();
@@ -30,18 +29,17 @@ const SearchForm = () => {
     const [ref, isClickedOutside] = useClickOutside();
 
     useEffect(() => {
+        let dropdownItems = document.getElementsByClassName("dropdownItems");
+        dropdownItems = dropdownItems[0];
+
         if (isClickedOutside) {
-            let DropdownItem = document.getElementsByClassName("dropdownItem");
-
-            for (const dropdownItemElement of DropdownItem) {
-                dropdownItemElement.classList.add('hide');
-            }
-
-            for (const dropdownItemElement of DropdownItem) {
-                dropdownItemElement.classList.add('hide');
-                dropdownItemElement.remove();
-            }
+            dropdownItems.classList.add('hide');
         }
+
+        if (!isClickedOutside){
+            dropdownItems.classList.remove('hide');
+        }
+
     }, [isClickedOutside]);
 
     return (
@@ -52,14 +50,14 @@ const SearchForm = () => {
                         <input type="text" placeholder={'Search...'} {...register('movie')} />
                         <button className={'button'}><img className={'iconSearch'}
                                                           src={searchIcon}
-                                                          alt={' '}/></button>
+                                                          alt={'searchIcon'}/></button>
                     </form>
                 </div>
                 <div className="dropdownItems dropdown" id={'dropdownItems'}>
                     {
                         dropdownItems.map(item =>
                             <div
-                                key={item['id']}
+                                key={item['id']} className={"dropdownItemWrap"}
                             ><NavLink className="dropdownItem" to={`/movie-project/movie/${item.id}`}
                                       onClick={() => dispatch(addMovieId(item.id))}>{item['title']}</NavLink>
                             </div>)

@@ -18,7 +18,7 @@ const MovieInfo = ({movie}) => {
 
     let movieImg = baseURLImg + poster_path;
 
-    release_date = release_date.replaceAll("-","/");
+    release_date = release_date.replaceAll("-", "/");
 
     return (
         <div className={'movieItem'}>
@@ -30,7 +30,7 @@ const MovieInfo = ({movie}) => {
                     {title}
                 </div>
                 <div className={'movieElementOverview'}>
-                    {overview !== ''? overview : 'We can\'t provide a short description for this movie yet.'}
+                    {overview !== '' ? overview : 'We can\'t provide a short description for this movie yet.'}
                 </div>
                 <div className={'movieElementReleaseDate'}>
                     <span className={"icon"}><img src={calendarIcon} alt={"icon"}/></span>
@@ -49,8 +49,12 @@ const MovieInfo = ({movie}) => {
                                 fillColor={"#85CFCB"}
                                 emptyColor={"#496767"}/>
                     </div>
-                    <button className={'movieElementButton'}><NavLink className={'movieElementLink'} to={`/movie-project/movie/${id}`}
-                                                                      onClick={() => dispatch(addMovieId(id))}>Learn more</NavLink>
+                    <button className={'movieElementButton'}><NavLink className={'movieElementLink'}
+                                                                      to={`/movie-project/movie/${id}`}
+                                                                      onClick={() => {
+                                                                          dispatch(addMovieId(id))
+                                                                          window.scrollTo(0, 0)
+                                                                      }}>Learn more</NavLink>
                     </button>
                 </div>
 

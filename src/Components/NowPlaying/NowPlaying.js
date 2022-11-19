@@ -26,7 +26,10 @@ const NowPlaying = () => {
                 <span className={'type'}>Now playing</span>
                 <button className={"seeAllButton"}>
                     <NavLink className={'typeLink'} to={'/movie-project/now_playing'}
-                          onClick={() => dispatch(addTypeOfMovies(urls.nowPlaying))}>See all</NavLink>
+                             onClick={() => {
+                                 dispatch(addTypeOfMovies(urls.nowPlaying))
+                                 window.scrollTo(0, 0)
+                             }}>See all</NavLink>
                 </button>
             </div>
             <div className={'movies'}>

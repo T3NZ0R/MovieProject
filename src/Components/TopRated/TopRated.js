@@ -25,7 +25,10 @@ const TopRated = () => {
             <div className={'typeTitle'}>
                 <span className={'type'}>Top rated</span>
                 <button className={"seeAllButton"}>
-                    <NavLink className={"typeLink"} to={'/movie-project/top_rated'} onClick={() => dispatch(addTypeOfMovies(urls.topRated))}>See all</NavLink>
+                    <NavLink className={"typeLink"} to={'/movie-project/top_rated'} onClick={() => {
+                        dispatch(addTypeOfMovies(urls.topRated))
+                        window.scrollTo(0, 0)
+                    }}>See all</NavLink>
                 </button>
             </div>
 

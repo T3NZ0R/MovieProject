@@ -20,7 +20,6 @@ export const ReviewValidator = Joi.object({
             'string.email': 'Email is not valid',
         }),
     content: Joi.string()
-        .alphanum()
         .min(4)
         .max(1000)
         .required()

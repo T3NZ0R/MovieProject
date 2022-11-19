@@ -76,16 +76,17 @@ form {
 }
 
 .dropdownItem {
-    padding: 20px;
+    padding: 30px;
+    height: 50px;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 16px;
-    line-height: 160%;
+    font-size: 18px;
+    line-height: 260%;
+    margin-top: 10px;
 }
 
 .dropdownItem:hover {
     color: #85CFCB;
 }
-
 
 

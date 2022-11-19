@@ -33,8 +33,9 @@ const MovieBadge = ({movie}) => {
                 <div className={'movieText'}>
                     <NavLink className={'movieLink'}
                              to={`/movie-project/movie/${id}`}
-                             onClick={() =>
-                                 dispatch(addMovieId(id))}>
+                             onClick={() =>{
+                                 dispatch(addMovieId(id))
+                                 window.scrollTo(0, 0)}}>
                         {title}</NavLink>
                     <p className="movieYear">{year}</p>
                 </div>

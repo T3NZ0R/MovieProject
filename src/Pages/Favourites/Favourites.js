@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
 import {MovieBadge} from "../../Components";
 import './Favourites.style.css';
@@ -7,6 +7,10 @@ import trailerNotAvailableImage from "../../img/Group 76.png";
 const Favourites = () => {
 
     let {favourites} = useSelector(state => state['movieListReducer']);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className={"favouritesWrap"}>

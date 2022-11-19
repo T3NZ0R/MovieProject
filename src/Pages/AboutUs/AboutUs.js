@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import vectorAboutUs from '../../img/VectorAboutUs.png';
 import iconPeopleAboutUs from '../../img/iconPeopleAboutUs.png';
@@ -8,6 +8,11 @@ import worldAboutUs from '../../img/worldAboutUs.png';
 import './AboutUs.style.css'
 
 const AboutUs = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className={"aboutUsWrap"}>
 
