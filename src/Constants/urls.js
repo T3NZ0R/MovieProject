@@ -8,8 +8,6 @@ export const urls = {
     upcoming: 'movie/upcoming',
     genre: 'genre/movie/list',
     discover: 'discover/movie',
-    requestToken: 'authentication/token/new',
-    logInUser: 'authentication/token/validate_with_login',
     search: 'search/movie',
     movieId: 'movie/',
     sessionId: 'authentication/guest_session/new',

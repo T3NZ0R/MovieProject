@@ -4,7 +4,8 @@ import {useParams} from "react-router-dom";
 import {Rating} from "react-simple-star-rating";
 
 import {
-    addMovieToFavourites, deleteMovieFromFavourites,
+    addMovieToFavourites,
+    deleteMovieFromFavourites,
     getMovieById,
     getMovieVideoById, getReviewMovieById,
     getSimilarMoviesById,

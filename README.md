@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+<h1 align="center"><img src="src/img/Group.png" alt="y" width="148"></h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center"> "<a href="https://t3nz0r.github.io/movie-project/" style="text-decoration: underline">MovieHub</a>" is a ReactApp which will make choosing a movie for the evening much easier.</h4>  
 
-## Available Scripts
+## Used packages
 
-In the project directory, you can run:
+### `axios`: `^0.27.2`
 
-### `npm start`
+Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic.\
+On the server-side it uses the native node.js http module, while on the client it uses XMLHttpRequests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `gh-pages`: `^4.0.0`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Publish files to a gh-pages branch on GitHub (or any other branch anywhere else).
 
-### `npm test`
+### `joi`: `^17.7.0`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The most powerful schema description language and data validator for JavaScript.
 
-### `npm run build`
+### `react`: `^18.2.0`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React is a JavaScript library for building user interfaces.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `react-bootstrap`: `^2.4.0`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.\
+It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other
+interface components.
 
-### `npm run eject`
+### `react-click-outside-hook`: `^1.1.1`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Hook implementation with click outside functionality.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `react-dom`: `^18.2.0`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This package serves as the entry point to the DOM and server renderers for React.\
+It is intended to be paired with the generic React package, which is shipped as react to npm.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `react-hook-form`: `^7.33.1`
 
-## Learn More
+Performant, flexible and extensible forms with easy-to-use validation.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `@reduxjs/toolkit`: `^1.8.3`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The official, opinionated, batteries-included toolset for efficient Redux development
 
-### Code Splitting
+### `react-router-dom`: `^6.3.0`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The react-router-dom package contains bindings for using React Router in web applications.
 
-### Analyzing the Bundle Size
+### `react-scripts`: `5.0.1`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This package includes scripts and configuration used by Create React App.
 
-### Making a Progressive Web App
+### `react-simple-star-rating`: `^4.0.5`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+A simple react component for adding a star rating to your project.
 
-### Advanced Configuration
+## Used API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<h1 align="center"><img src="src/img/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt=""></h1>
 
-### Deployment
+TMDb offers a powerful API service that is free to use as long as you properly attribute us as the source of the data
+and/or images you use. \
+<a href="https://developers.themoviedb.org/3/getting-started/introduction">Link to the API documentation</a> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Base URL: https://api.themoviedb.org/3/ \
+Base URL for images: https://image.tmdb.org/t/p/original\
 
-### `npm run build` fails to minify
+For this project we use:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Path                               |     Page      |     Component     |
+|:-----------------------------------|:-------------:|:-----------------:|
+| `movie/now_playing`                | MovieListPage |    NowPlaying     |
+| `movie/popular`                    | MovieListPage |      Popular      |          
+| `movie/top_rated`                  | MovieListPage |     TopRated      |          
+| `movie/upcoming`                   | MovieListPage |     Upcoming      |          
+| `genre/movie/list`                 | ------------  |    GenreBadge     |          
+| `discover/movie`                   | GenreListPage | ----------------- |          
+| `search/movie`                     | ------------  |    SearchForm     |          
+| `movie/`                           |  WatchMovie   |    MovieBadge     |          
+| `authentication/guest_session/new` | ------------  |      Header       |          
+| `/videos`                          |  WatchMovie   |   ------------    |          
+| `/similar`                         |  WatchMovie   |   ------------    |          
+| `/reviews`                         |  WatchMovie   |   ------------    |          
