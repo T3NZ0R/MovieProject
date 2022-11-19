@@ -58,7 +58,7 @@ A simple react component for adding a star rating to your project.
 
 ## Used API
 
-<h1 align="center"><img src="src/img/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt=""></h1>
+<h1 align="center"><img src="src/img/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.png" alt=""></h1>
 
 TMDb offers a powerful API service that is free to use as long as you properly attribute us as the source of the data
 and/or images you use. \
