@@ -76,7 +76,7 @@ const Header = () => {
 
                     <div className={'categories'}>
                         <div className={'logoImg'}>
-                            <img src={logo} alt="Logo"/>
+                            <NavLink to={'movie-project/'}> <img src={logo} alt="Logo"/></NavLink>
                         </div>
                         <NavLink to={'movie-project/'} className={"link"} id={'home'}>Home</NavLink>
                         <GenreBadge clasName={"link"} id={'genre'}/>
@@ -111,7 +111,6 @@ const Header = () => {
                     <Route path={'movie-project/about-us'} element={<AboutUs/>}/>
 
                     <Route path={'*'} element={<NoInfo/>}/>
-
 
                 </Routes>
             </div>
