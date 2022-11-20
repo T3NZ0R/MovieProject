@@ -81,5 +81,5 @@ For this project we use:
 | `movie/`                           |  WatchMovie   |    MovieBadge     |          
 | `authentication/guest_session/new` | ------------  |      Header       |          
 | `/videos`                          |  WatchMovie   |   ------------    |          
-| `/similar`                         |  WatchMovie   |   ------------    |          
-| `/reviews`                         |  WatchMovie   |   ------------    |          
+| `/similar`                         |  WatchMovie   |   SimilarMovies   |          
+| `/reviews`                         |  WatchMovie   |      Reviews      |          

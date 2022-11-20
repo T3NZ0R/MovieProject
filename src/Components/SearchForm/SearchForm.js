@@ -59,7 +59,9 @@ const SearchForm = () => {
                             <div
                                 key={item['id']} className={"dropdownItemWrap"}
                             ><NavLink className="dropdownItem" to={`/movie-project/movie/${item.id}`}
-                                      onClick={() => dispatch(addMovieId(item.id))}>{item['title']}</NavLink>
+                                      onClick={() => {dispatch(addMovieId(item.id))
+                                          window.scrollTo(0, 0)}
+                            }>{item['title']}</NavLink>
                             </div>)
                     }
                 </div>
