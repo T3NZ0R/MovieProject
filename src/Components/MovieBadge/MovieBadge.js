@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 
 import {addMovieId} from "../../Store";
 import {baseURLImg} from "../../Constants";
+
 import './movieBadge.style.css';
 
 const MovieBadge = ({movie}) => {

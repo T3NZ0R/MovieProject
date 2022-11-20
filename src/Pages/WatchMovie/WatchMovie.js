@@ -13,16 +13,13 @@ import {
     removeRating,
     switcherController
 } from "../../Store";
-
 import {baseURLImg} from "../../Constants";
-import {SimilarMovies} from "../../Components/SimilarMovies/SimilarMovies";
-import './watchMovie.style.css';
+import {SimilarMovies, Reviews} from "../../Components";
 
+import './watchMovie.style.css';
 import trailerNotAvailableImage from '../../img/Group 76.png';
 import likeFavourites from '../../img/Favourites.png';
 import likeFavouritesActive from '../../img/FavouritesActive.png';
-
-import {Reviews} from "../../Components/Reviews/Reviews";
 
 const WatchMovie = () => {
 
@@ -168,24 +165,24 @@ const WatchMovie = () => {
                         <div className={'green'}>
                             <div className={'infoBlock'}>Country:</div>
                             <span
-                                className={'lightGreen'}>{movie['production_countries'] ? getInfo(movie['production_countries']) : 'No info'}</span>
+                                className={'lightGreen'}>{typeof movie['production_countries'][0] !== "undefined" ? getInfo(movie['production_countries']) : 'No info'}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Genres:</div>
-                            <span className={'lightGreen'}>{movie['genres'] ? getInfo(movie['genres']) : 'No info'}</span>
+                            <span className={'lightGreen'}>{typeof movie['genres'][0] !== "undefined" ? getInfo(movie['genres']) : 'No info'}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Spoken languages:</div>
                             <span
-                                className={'lightGreen'}>{movie['spoken_languages'] ? getInfo(movie['spoken_languages']) : 'No info'}</span>
+                                className={'lightGreen'}>{typeof movie['spoken_languages'][0] !== "undefined" ? getInfo(movie['spoken_languages']) : 'No info'}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Production companies:</div>
                             <span
-                                className={'lightGreen'}>{movie['production_companies'] ? getInfo(movie['production_companies']) : 'No info'}</span>
+                                className={'lightGreen'}>{typeof movie['production_companies'][0] !== "undefined" ? getInfo(movie['production_companies']) : 'No info'}</span>
                         </div>
 
                         <div className={'green'}>

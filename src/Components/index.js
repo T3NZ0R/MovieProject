@@ -8,3 +8,6 @@ export * from './Popular/Popular';
 export * from './SearchForm/SearchForm';
 export * from './TopRated/TopRated';
 export * from './Upcoming/Upcoming';
+export * from './CarouselPreview/CarouselPreview';
+export * from './SimilarMovies/SimilarMovies';
+export * from './Reviews/Reviews';

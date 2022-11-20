@@ -2,11 +2,11 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
 import Pagination from "react-bootstrap/Pagination";
+import {Dropdown, DropdownButton} from "react-bootstrap";
 
 import {MovieInfo} from "../../Components";
 import {moviesListService} from "../../Services/";
 import {addPageNumber, addSort} from "../../Store";
-import {Dropdown, DropdownButton} from "react-bootstrap";
 
 
 const MoviesGenrePage = () => {

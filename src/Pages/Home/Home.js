@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 
-import {NowPlaying, Popular, TopRated, Upcoming} from "../../Components";
-import {CarouselPreview} from "../../Components/CarouselPreview/CarouselPreview";
+import {NowPlaying, Popular, TopRated, Upcoming, CarouselPreview} from "../../Components";
+
 import './Home.style.css';
 
 

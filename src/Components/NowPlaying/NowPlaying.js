@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 import {addTypeOfMovies, getMovieList} from "../../Store";
 import {MovieBadge} from "../";
 import {urls} from "../../Constants";
+
 import './type.style.css';
 
 const NowPlaying = () => {

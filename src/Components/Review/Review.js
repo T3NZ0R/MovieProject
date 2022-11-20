@@ -1,7 +1,8 @@
 import React from 'react';
-import './Review.style.css';
+
 import {baseURLImg} from "../../Constants";
 
+import './Review.style.css';
 import defaultAvatar from '../../img/profile.png';
 
 

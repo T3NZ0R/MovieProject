@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
 
+import './AboutUs.style.css'
 import vectorAboutUs from '../../img/VectorAboutUs.png';
 import iconPeopleAboutUs from '../../img/iconPeopleAboutUs.png';
 import pcAboutUs from '../../img/PCAboutUs.png';
 import worldAboutUs from '../../img/worldAboutUs.png';
-
-import './AboutUs.style.css'
 
 const AboutUs = () => {
 

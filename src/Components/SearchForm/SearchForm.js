@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 import {useClickOutside} from 'react-click-outside-hook';
 
 import {addMovieId, searchMovie} from "../../Store";
+
 import './searchForm.style.css';
 import searchIcon from '../../img/Vector.png'
 

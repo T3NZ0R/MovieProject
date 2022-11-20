@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './footer.style.css';
-
 import telegram from '../../img/Telegram_logo 2.png';
 import instagram from '../../img/pngegg (1) 2.png';
 import facebook from '../../img/pngwing 2.png';

@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getMovieList} from "../../Store";
 import {MovieBadge} from "../";
 import {urls} from "../../Constants";
+
 import './SimilarMovies.style.css';
 
 const SimilarMovies = () => {

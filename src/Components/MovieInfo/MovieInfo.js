@@ -5,8 +5,8 @@ import {Rating} from "react-simple-star-rating";
 
 import {addMovieId} from "../../Store";
 import {baseURLImg} from "../../Constants";
-import './movieInfo.style.css';
 
+import './movieInfo.style.css';
 import calendarIcon from '../../img/calendarItem.png';
 import worldIcon from '../../img/worldItem.png';
 

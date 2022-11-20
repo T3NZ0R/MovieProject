@@ -1,14 +1,14 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import {useDispatch, useSelector} from "react-redux";
+import {joiResolver} from "@hookform/resolvers/joi";
+
+import {addReview} from "../../Store";
+import {Review} from "../Review/Review";
+import {ReviewValidator} from "../../Validators/review.validator";
 
 import './Reviews.style.css';
-import {useDispatch, useSelector} from "react-redux";
-import {Review} from "../Review/Review";
-
 import close from '../../img/close.png';
-import {addReview} from "../../Store";
-import {joiResolver} from "@hookform/resolvers/joi";
-import {ReviewValidator} from "../../Validators/review.validator";
 
 const Reviews = ({movieId}) => {
 

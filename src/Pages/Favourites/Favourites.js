@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
 import {MovieBadge} from "../../Components";
+
 import './Favourites.style.css';
 import trailerNotAvailableImage from "../../img/Group 76.png";
 

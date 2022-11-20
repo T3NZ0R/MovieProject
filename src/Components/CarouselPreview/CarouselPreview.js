@@ -1,12 +1,14 @@
-import Carousel from 'react-bootstrap/Carousel';
-import {useDispatch, useSelector} from "react-redux";
 import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {NavLink} from "react-router-dom";
+
+import Carousel from 'react-bootstrap/Carousel';
 import {addMovieId, getPosterPreview} from "../../Store";
 import {baseURLBackdrop} from "../../Constants";
+
 import './CarouselPreview.style.css';
 import starCarousel from '../../img/starCarousel.png'
 import calendarCarousel from '../../img/calendarCarousel.png'
-import {NavLink} from "react-router-dom";
 
 
 const CarouselPreview = () => {

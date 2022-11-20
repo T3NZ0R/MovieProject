@@ -5,6 +5,7 @@ import Pagination from 'react-bootstrap/Pagination';
 import {MovieInfo} from "../../Components";
 import {moviesListService} from "../../Services";
 import {addPageNumber} from "../../Store";
+
 import './movieListPage.style.css';
 
 const MoviesListPage = () => {
