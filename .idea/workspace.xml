@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project Final Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,7 @@
       <workItem from="1668892033782" duration="298000" />
       <workItem from="1668943827382" duration="3888000" />
       <workItem from="1668953884679" duration="618000" />
-      <workItem from="1668960222876" duration="1412000" />
+      <workItem from="1668960222876" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="Pet Project">
       <created>1659627645541</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668960266094</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Pet Project Final Version">
+      <created>1668961804941</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668961804941</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

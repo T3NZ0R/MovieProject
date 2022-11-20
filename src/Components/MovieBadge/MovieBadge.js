@@ -25,18 +25,21 @@ const MovieBadge = ({movie}) => {
 
                 <NavLink className={'hoverCard'}
                          to={`/movie-project/movie/${id}`}
-                         onClick={() =>
-                             dispatch(addMovieId(id))}>
-                    <div ></div>
+                         onClick={() => {
+                             dispatch(addMovieId(id));
+                             window.scrollTo(0, 0);
+                         }}>
+                    <div></div>
                 </NavLink>
 
 
                 <div className={'movieText'}>
                     <NavLink className={'movieLink'}
                              to={`/movie-project/movie/${id}`}
-                             onClick={() =>{
-                                 dispatch(addMovieId(id))
-                                 window.scrollTo(0, 0)}}>
+                             onClick={() => {
+                                 dispatch(addMovieId(id));
+                                 window.scrollTo(0, 0);
+                             }}>
                         {title}</NavLink>
                     <p className="movieYear">{year}</p>
                 </div>
