@@ -25,7 +25,6 @@ const WatchMovie = () => {
 
     let {id} = useParams();
 
-
     const {movie, movieTrailer, favourites} = useSelector(state => state['movieListReducer']);
     const {sessionId, switcher} = useSelector(state => state['rateReducer']);
 
@@ -80,13 +79,20 @@ const WatchMovie = () => {
     let getInfo = (data) => {
         let info = '';
 
-        for (let i = 0; i < data.length; i++) {
-            if (i === 0) {
-                info = info + data[i].name;
-            } else {
-                info = info + `, ${data[i].name}`;
+        if(data){
+            for (let i = 0; i < data.length; i++) {
+                if (i === 0) {
+                    info = info + data[i].name;
+                } else {
+                    info = info + `, ${data[i].name}`;
+                }
             }
         }
+
+        if(info.length < 2){
+            info = 'No info';
+        }
+
         return info;
     }
 
@@ -165,24 +171,24 @@ const WatchMovie = () => {
                         <div className={'green'}>
                             <div className={'infoBlock'}>Country:</div>
                             <span
-                                className={'lightGreen'}>{typeof movie['production_countries'][0] !== "undefined" ? getInfo(movie['production_countries']) : 'No info'}</span>
+                                className={'lightGreen'}>{getInfo(movie['production_countries'])}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Genres:</div>
-                            <span className={'lightGreen'}>{typeof movie['genres'][0] !== "undefined" ? getInfo(movie['genres']) : 'No info'}</span>
+                            <span className={'lightGreen'}>{getInfo(movie['genres'])}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Spoken languages:</div>
                             <span
-                                className={'lightGreen'}>{typeof movie['spoken_languages'][0] !== "undefined" ? getInfo(movie['spoken_languages']) : 'No info'}</span>
+                                className={'lightGreen'}>{getInfo(movie['spoken_languages'])}</span>
                         </div>
 
                         <div className={'green'}>
                             <div className={'infoBlock'}>Production companies:</div>
                             <span
-                                className={'lightGreen'}>{typeof movie['production_companies'][0] !== "undefined" ? getInfo(movie['production_companies']) : 'No info'}</span>
+                                className={'lightGreen'}>{getInfo(movie['production_companies'])}</span>
                         </div>
 
                         <div className={'green'}>
