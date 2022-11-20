@@ -3,25 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d616076-eeb7-47d6-87d8-7c8f20441b71" name="Changes" comment="Pet Project Final Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CarouselPreview/CarouselPreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CarouselPreview/CarouselPreview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieBadge/MovieBadge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieInfo/MovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieInfo/MovieInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NowPlaying/NowPlaying.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NowPlaying/NowPlaying.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Review/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Review/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Reviews/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Reviews/Reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SimilarMovies/SimilarMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SimilarMovies/SimilarMovies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopRated/TopRated.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopRated/TopRated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Upcoming/Upcoming.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Upcoming/Upcoming.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Favourites/Favourites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Favourites/Favourites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MovieListPage/MovieListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MovieListPage/MovieListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MoviesGenrePage/MoviesGenrePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MoviesGenrePage/MoviesGenrePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/WatchMovie/WatchMovie.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +187,8 @@
       <workItem from="1668873340914" duration="783000" />
       <workItem from="1668878809069" duration="10289000" />
       <workItem from="1668892033782" duration="298000" />
-      <workItem from="1668943827382" duration="3791000" />
+      <workItem from="1668943827382" duration="3888000" />
+      <workItem from="1668953884679" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="Pet Project">
       <created>1659627645541</created>
@@ -369,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668948149738</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Pet Project Final Version">
+      <created>1668949433972</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668949433972</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
