@@ -62,12 +62,12 @@ A simple react component for adding a star rating to your project.
 
 TMDb offers a powerful API service that is free to use as long as you properly attribute us as the source of the data
 and/or images you use. \
-<a href="https://developers.themoviedb.org/3/getting-started/introduction">Link to the API documentation</a> 
+<a href="https://developers.themoviedb.org/3/getting-started/introduction">Link to the API documentation</a>
 
 Base URL: https://api.themoviedb.org/3/ \
 Base URL for images: https://image.tmdb.org/t/p/original\
 
-For this project we use:
+For this project was used:
 
 | Path                               |     Page      |     Component     |
 |:-----------------------------------|:-------------:|:-----------------:|
@@ -83,3 +83,4 @@ For this project we use:
 | `/videos`                          |  WatchMovie   |   ------------    |          
 | `/similar`                         |  WatchMovie   |   SimilarMovies   |          
 | `/reviews`                         |  WatchMovie   |      Reviews      |          
+| `/movie/:id/rating`                |  WatchMovie   |   ------------    |          
