@@ -104,7 +104,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #85CFCB;
     border-radius: 5px;
-
 }
 
 /* Handle on hover */
@@ -176,7 +175,7 @@ body {
 .carousel-control-prev {
     left: 1122px;
     height: 50px;
-    top: 170px;
+    top: 185px;
     z-index: 3;
 
 }

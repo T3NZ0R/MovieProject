@@ -38,9 +38,7 @@ const Header = () => {
             });
         }
 
-        console.log(path);
-
-        if (home) {
+        if (path) {
             switch (path) {
                 case '/movie-project/':
                     home.classList.add("activePage");
@@ -61,8 +59,15 @@ const Header = () => {
                     customHover();
                     break;
                 default:
-                    genre.style.color = '#219897';
-                    genre.style.opacity = 'unset';
+
+                    genre.style.color = 'unset';
+                    genre.style.opacity = '0.6';
+                    customHover();
+
+                    if (path.includes('genre')){
+                        genre.style.color = '#219897';
+                        genre.style.opacity = 'unset';
+                    }
                     break;
             }
         }
